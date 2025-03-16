@@ -1,0 +1,43 @@
+# Bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDE configurations
+.idea/
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python egg and distribution files
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Pytest cache
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Coverage reports
+.coverage
+*.coveragerc
+.coverage.*
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+
+# Logs
+*.log
