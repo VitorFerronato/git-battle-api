@@ -24,7 +24,7 @@ This is an API built with Flask that allows you to compare two GitHub developers
 
 Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/git-battle-api.git
+git clone https://github.com/VitorFerronato/git-battle-api.git
 cd git-battle-api
 ```
 
