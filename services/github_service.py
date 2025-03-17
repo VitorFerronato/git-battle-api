@@ -8,7 +8,7 @@ def get_github_data(username: str):
         return None
 
     if response.status_code != 200:
-        return {"error": "Erro ao buscar dados do GitHub."}
+        return {"error": "Erro ao buscar dados do GitHub."}  
 
     user_data = response.json()
 
