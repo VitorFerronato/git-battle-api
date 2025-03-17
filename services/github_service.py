@@ -1,9 +1,8 @@
 import requests
-from config import GITHUB_API_URL
 from models.developer import Developer
 
 def get_github_data(username: str):
-    response = requests.get(f"{GITHUB_API_URL}{username}")
+    response = requests.get(f"https://api.github.com/users/{username}")
 
     if response.status_code == 404:
         return None
