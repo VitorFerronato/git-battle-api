@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from services import get_github_data
+from services.github_service import get_github_data
 
 github_bp = Blueprint('github', __name__)
 
@@ -17,7 +17,6 @@ def compare_devs():
     if data1 is None or data2 is None:
         return jsonify({"error": "Usuário(s) não encontrado(s)"}), 404
 
-    # 🔥 Aqui estava o erro: data1 e data2 estavam como dict, agora garantimos que sejam objetos
     if isinstance(data1, dict) or isinstance(data2, dict):
         return jsonify({"error": "Erro ao buscar dados do GitHub"}), 500
 
